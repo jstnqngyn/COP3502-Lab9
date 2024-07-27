@@ -5,7 +5,7 @@ Justin Nguyen
 Objective: Create a looping menu, with options: encode, decode, and exit.
 """
 # IMPORTS
-from functions import encode # import decode later
+from functions import *
 
 
 # MAIN FUNCTION
@@ -28,7 +28,7 @@ def main():
             print("Your password has been encoded and stored!")
 
         elif choice == 2:
-            pass
+            print(f"The encoded password is: {encoded_pass}, and the orginal password is: {decode(encoded_pass)}.")
 
         elif choice == 3:
             menu_is_active = False
